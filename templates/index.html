@@ -1,337 +1,20 @@
+{% extends 'include/homepage.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home - Music Forest HTML Template</title>
-        <!-- Bootstrap core CSS -->
-        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-        <!-- Preloader CSS -->
-        <link rel="stylesheet" href="{% static 'css/preloader.css' %}">
-        <!-- DL Menu CSS -->
-        <link href="{% static 'js/dl-menu/component.css' %}" rel="stylesheet">
-        <!-- Slick Slider CSS -->
-        <link href="{% static 'css/slick.css' %}" rel="stylesheet"/>
-        <link href="{% static 'css/slick-theme.css' %}" rel="stylesheet"/>
-        <!-- jquery.bxslider CSS -->
-        <link href="{% static 'css/jquery.bxslider.css' %}" rel="stylesheet">
-        <!--Player Css-->
-        <link href="{% static 'js/jplayer/jplayer.uno.css' %}" rel="stylesheet" />
-        <!--black-style Css-->
-        <link href="{% static 'css/black-style.css' %}" rel="stylesheet" />
-        <!-- Fav icon -->
-        <link rel="icon" type="icon" sizes="96x96" href="fonts/fav.png' %}">
-        <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-        <link href="{% static 'css/svg-icons.css' %}" rel="stylesheet">
-        <!-- Pretty Photo CSS -->
-        <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
-        <!-- animation CSS -->
-        <link href="{% static 'css/animation.css' %}" rel="stylesheet">
-        <!-- Range slider CSS -->
-        <link href="{% static 'css/range-slider.css' %}" rel="stylesheet">
-        <!-- Typography CSS -->
-        <link href="{% static 'css/typography.css' %}" rel="stylesheet">
-        <!-- Widget CSS -->
-        <link href="{% static 'css/widget.css' %}" rel="stylesheet">
-        <!-- Shortcodes CSS -->
-        <link href="{% static 'css/shortcodes.css' %}" rel="stylesheet">
-        <!-- Custom Main StyleSheet CSS -->
-        <link href="{% static 'style.css' %}" rel="stylesheet">
-        <!-- Color CSS -->
-        <link href="{% static 'css/color.css' %}" rel="stylesheet">
-        
-        <!-- Responsive CSS -->
-        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-    </head>
-
-    <body class="msl-black">
+{% block content %}
         <!--Loader Wrapper Start-->
         <div id="loader-wrapper">
             <div id="loader"></div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
         </div>
-        <!--Loader Wrapper End--> 
         
         <!--Kode Wrapper Start-->  
         <div class="kode_wrapper"> 
-        	<header class="header-style-3">
-                <div class="header-1st-row">
-                    <div class="container">
-                        <div class="breaking-news-column">
-                            <strong>Breaking News:</strong>
-                            <div class="brk-slider">
-                                <div class="news_items">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                </div>
-                                <div class="news_items">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                </div>
-                                <div class="news_items">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-2st-row ">
-                    <div class="container">
-                        <div class="pull-left">
-                            <div class="social-icons">
-                                <strong>FOLLOW US:</strong>
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                                    <li><a href=""><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="center-logo">
-                            <div class="logo">
-                                <h1>
-                                    <a href="#">
-                                        <img class="logo-light" src="{% static 'images/logo-light.png' %}" alt="logo here">
-                                        <img class="logo-drak" src="{% static 'images/logo-dark.png' %}" alt="logo here">
-                                    </a>
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="pull-right">
-                            <ul class="playlist_menu_bar">
-                                <li><a href="mp3-list.html" class=""><i class="icon-music"></i></a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#login-register1"><i class="fa fa-user-circle"></i></a></li>
-                                <li><a data-action="open" data-side="right" class="side_t kf_menu_button" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <div id="kode-responsive-navigation" class="dl-menuwrapper">
-	                            <button class="dl-trigger"></button>
-	                            <ul class="dl-menu">
-	                                <li class="menu-item">
-	                                    <a href="index.html">Home</a>
-	                                    <ul class="dl-submenu">
-											<li><a href="light-index.html">Home Light</a></li>
-	                                    </ul>
-	                                </li>
-	                                <li class="menu-item">
-	                                    <a href="artist.html">artist</a>
-	                                    <ul class="dl-submenu">
-	                                        <li><a href="artist.html">artist</a></li>
-											<li><a href="artist-blog.html">artist 02</a></li>
-											<li><a href="event-organiser.html">artist 03</a></li>
-											<li><a href="dj.html">dj</a></li>
-	                                    </ul>
-	                                </li>
-	                                <li class="menu-item">
-	                                    <a href="#">event</a>
-	                                    <ul class="dl-submenu">
-	                                        <li>
-												<a href="event-list.html">event list</a>
-											</li>
-											<li>
-												<a href="event-list-2.html">event list 02</a>
-											</li>
-											<li>
-												<a href="event-list-3.html">event list 03</a>
-											</li>
-											<li>
-												<a href="event-detail.html">event detail</a>
-											</li>
-	                                    </ul>
-	                                </li>
-	                                <li class="menu-item "><a href="#">music</a>
-	                                    <ul class="dl-submenu">
-											<li>
-												<a href="video.html">video</a>
-											</li>
-											<li>
-												<a href="video-list.html">video list</a>
-											</li>
-											<li>
-												<a href="video-detail.html">video detail</a>
-											</li>
-											<li>
-												<a href="mp3-list.html">mp3 list</a>
-											</li>
-											<li>
-												<a href="music-artist-albums.html">music artist albums</a>
-											</li>
-											<li>
-												<a href="music-albums.html">music albums</a>
-											</li>
-											<li>
-												<a href="masonry-gallary.html">masonry gallary</a>
-											</li>
-	                                    </ul>
-	                                </li>
-	                                <li class="menu-item "><a href="#">blog</a>
-	                                    <ul class="dl-submenu">
-	                                        <li>
-												<a href="blog-detail.html">blog-detail</a>
-											</li>
-											<li>
-												<a href="blog-detail-02.html">blog-detail 02</a>
-											</li>
-											<li>
-												<a href="blog-detail-leftsidebar.html">blog-left-sidebar</a>
-											</li>
-											<li>
-												<a href="blog-right-sidebar.html">blog-right-sidebar</a>
-											</li>
-											<li>
-												<a href="blog-full.html">blog full</a>
-											</li>
-											<li>
-												<a href="blog-medium.html">blog medium</a>
-											</li>
-											<li>
-												<a href="blog-small.html">blog small</a>
-											</li>
-											<li>
-												<a href="masonry-blog.html">masonry small</a>
-											</li>
-	                                    </ul>
-	                                </li>
-	                                <li class="menu-item"><a href="#">pages</a>
-	                                    <ul class="dl-submenu">
-	                                        <li>
-												<a href="shop.html">shop</a>
-											</li>
-											<li>
-												<a href="shop-items.html">shop items</a>
-											</li>
-											<li>
-												<a href="shop-listing.html">shop listing</a>
-											</li>
-											<li>
-												<a href="headers.html">headers</a>
-											</li>
-	                                    </ul>
-	                                </li>
-	                                <li><a href="contact-us.html">contact us</a></li>
-	                            </ul>
-	                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-2st-row align-center-nav">
-                    <div class="container">
-                        <div class="fst-navigation">
-                            <nav class="navigation-1">
-        						<ul>	
-        							<li class="active"><a href="index.html">home</a>
-										<ul class="sub-menu children">
-										   <li><a href="light-index.html">Home Light</a></li>		
-										</ul>
-									</li>
-									<li><a href="artist.html">artist</a>
-										<ul class="sub-menu children">
-											<li><a href="artist.html">artist</a></li>
-											<li><a href="artist-blog.html">artist 02</a></li>
-											<li><a href="event-organiser.html">artist 03</a></li>
-											<li><a href="dj.html">dj</a></li>
-										</ul>	
-									</li>
-									<li class="menu-item ">
-										<a href="#">event</a>
-										<ul class="sub-menu children">
-											<li>
-												<a href="event-list.html">event list</a>
-											</li>
-											<li>
-												<a href="event-list-2.html">event list 02</a>
-											</li>
-											<li>
-												<a href="event-list-3.html">event list 03</a>
-											</li>
-											<li>
-												<a href="event-detail.html">event detail</a>
-											</li>
-										</ul>
-									</li>
-									<li class="menu-item "><a href="#">music</a>
-										<ul class="sub-menu children">
-											<li>
-												<a href="dj.html">dj</a>
-											</li>
-											<li>
-												<a href="video.html">video</a>
-											</li>
-											<li>
-												<a href="video-list.html">video list</a>
-											</li>
-											<li>
-												<a href="video-detail.html">video detail</a>
-											</li>
-											<li>
-												<a href="mp3-list.html">mp3 list</a>
-											</li>
-											<li>
-												<a href="music-artist-albums.html">music artist albums</a>
-											</li>
-											<li>
-												<a href="music-albums.html">music albums</a>
-											</li>
-											<li>
-												<a href="masonry-gallary.html">masonry gallary</a>
-											</li>
-										</ul>
-									</li>
-									<li class="menu-item "><a href="#">blog</a>
-										<ul class="sub-menu children">
-											<li>
-												<a href="blog-detail.html">blog detail</a>
-											</li>
-											<li>
-												<a href="blog-detail-leftsidebar.html">blog left sidebar</a>
-											</li>
-											<li>
-												<a href="blog-right-sidebar.html">blog right sidebar</a>
-											</li>
-											<li>
-												<a href="blog-full.html">blog full</a>
-											</li>
-											<li>
-												<a href="blog-medium.html">blog medium</a>
-											</li>
-											<li>
-												<a href="blog-small.html">blog small</a>
-											</li>
-											<li>
-												<a href="masonry-blog.html">masonry small</a>
-											</li>
-										</ul>
-									</li>
-									<li class="menu-item ">
-										<a href="">page</a>
-										<ul class="sub-menu children">
-											<li>
-												<a href="shop.html">shop</a>
-											</li>
-											<li>
-												<a href="shop-items.html">shop items</a>
-											</li>
-											<li>
-												<a href="shop-listing.html">shop listing</a>
-											</li>
-											<li>
-												<a href="headers.html">headers</a>
-											</li>
-										</ul>
-									</li>
-									<li><a href="contact-us.html">contact us</a></li>
-								</ul>
-        					</nav>                           
-                        </div>
-                    </div>
-                </div>
-            </header>
-
+            {% include 'include/header.html' %}
+        	
             <div class="banner_slider">
                 <div class="slide left-align">
-                    <img src="{% static 'extra-images/kf_slide_img14.jpg' %}" alt="banner img">
+                    <img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="banner img">
                     <div class="banner_content container">
                         <div class="b_title animated">OUR LATEST EVENT  IS READY NOW!</div>
                         <p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut magna aliqua.</p>
@@ -340,7 +23,7 @@
                     </div>
                 </div>
                 <div class="slide center-align">
-                    <img src="{% static 'extra-images/kf_slide_img5.jpg' %}" alt="banner img">
+                    <img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="banner img">
                     <div class="banner_content container">
                         <div class="b_title animated">OUR LATEST EVENT  IS READY NOW!</div>
                         <p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut magna aliqua.</p>
@@ -349,7 +32,7 @@
                     </div>
                 </div>
                 <div class="slide right-align">
-                    <img src="{% static 'extra-images/kf_slide_img8.jpg' %}" alt="banner img">
+                    <img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="banner img">
                     <div class="banner_content container">
                         <div class="b_title animated">OUR LATEST EVENT  IS READY NOW!</div>
                         <p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut magna aliqua.</p>
@@ -364,7 +47,7 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="music-top-chart-list">
 						<figure>
-							<img src="{% static 'extra-images/program-02.jpg' %}" alt="Image Here">
+							<img src="{% static 'images/program-02.jpg' %}" alt="Image Here">
 						</figure>
 						<div class="music-top-chart-des">
 							<h5>THE TOP 50</h5>
@@ -383,7 +66,7 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="music-top-chart-list">
 						<figure>
-							<img src="{% static 'extra-images/program-01.jpg' %}" alt="Image Here">
+							<img src="{% static 'images/program-01.jpg' %}" alt="Image Here">
 						</figure>
 						<div class="music-top-chart-des">
 							<h5>TOP SELLER 2018</h5>
@@ -402,7 +85,7 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="music-top-chart-list">
 						<figure>
-							<img src="{% static 'extra-images/program-03.jpg' %}" alt="Image Here">
+							<img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="Image Here">
 						</figure>
 						<div class="music-top-chart-des">
 							<h5>TWITTER TOP TREND</h5>
@@ -439,7 +122,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album1.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album1.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -474,7 +157,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album2.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album2.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -509,7 +192,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album3.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album3.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -544,7 +227,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album4.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album4.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -579,7 +262,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album5.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album5.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -614,7 +297,7 @@
 				                        <!--New Album Thumb Start-->
 				                        <div class="new-album-thumb">
 				                            <figure>
-				                                <img src="{% static 'extra-images/black-img/album6.jpg' %}" alt="KODEFOREST">
+				                                <img src="{% static 'images/black-img/album6.jpg' %}" alt="KODEFOREST">
 				                            </figure>
 				                            <div class="new-album-caption">
 				                                <a href="" class="new-album fa fa-play"></a>
@@ -659,7 +342,7 @@
                                     <div>
                                         <!--Event List 2 Strat-->
                                         <div class="msl-eventlist2">
-                                            <figure><img src="{% static 'extra-images/black-img/event-list6.jpg' %}" alt="KODEFOREST"></figure>
+                                            <figure><img src="{% static 'images/black-img/event-list6.jpg' %}" alt="KODEFOREST"></figure>
                                             <div class="eventlist2-heading">
                                                 <h5><a href="#">Summer Music Festival</a></h5>
                                                 <div class="evnt-tag">
@@ -680,7 +363,7 @@
                                     <div>
                                         <!--Event List 2 Strat-->
                                         <div class="msl-eventlist2">
-                                            <figure><img src="{% static 'extra-images/black-img/event-list7.jpg' %}" alt="KODEFOREST"></figure>
+                                            <figure><img src="{% static 'images/black-img/event-list7.jpg' %}" alt="KODEFOREST"></figure>
                                             <div class="eventlist2-heading">
                                                 <h5><a href="#">Summer Music Festival</a></h5>
                                                 <div class="evnt-tag">
@@ -701,7 +384,7 @@
                                     <div>
                                         <!--Event List 2 Strat-->
                                         <div class="msl-eventlist2">
-                                            <figure><img src="{% static 'extra-images/black-img/event-list9.jpg' %}" alt="KODEFOREST"></figure>
+                                            <figure><img src="{% static 'images/black-img/event-list9.jpg' %}" alt="KODEFOREST"></figure>
                                             <div class="eventlist2-heading">
                                                 <h5><a href="#">Summer Music Festival</a></h5>
                                                 <div class="evnt-tag">
@@ -722,7 +405,7 @@
                                     <div>
                                         <!--Event List 2 Strat-->
                                         <div class="msl-eventlist2">
-                                            <figure><img src="{% static 'extra-images/black-img/event-list8.jpg' %}" alt="KODEFOREST"></figure>
+                                            <figure><img src="{% static 'images/black-img/event-list8.jpg' %}" alt="KODEFOREST"></figure>
                                             <div class="eventlist2-heading">
                                                 <h5><a href="#">Summer Music Festival</a></h5>
                                                 <div class="evnt-tag">
@@ -743,7 +426,7 @@
                                     <div>
                                         <!--Event List 2 Strat-->
                                         <div class="msl-eventlist2">
-                                            <figure><img src="{% static 'extra-images/black-img/event-list6.jpg' %}" alt="KODEFOREST"></figure>
+                                            <figure><img src="{% static 'images/black-img/event-list6.jpg' %}" alt="KODEFOREST"></figure>
                                             <div class="eventlist2-heading">
                                                 <h5><a href="#">Summer Music Festival</a></h5>
                                                 <div class="evnt-tag">
@@ -775,7 +458,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb1.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/smal-thumb1.jpg' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -796,7 +479,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb2.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/smal-thumb2.jpg' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -817,7 +500,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb3.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/smal-thumb3.jpg' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -842,7 +525,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb4.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/smal-thumb4.jpg' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -863,7 +546,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb5.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/smal-thumb5.jpg' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -884,7 +567,7 @@
 								            <!--Featured Thumb Start-->
 								            <div class="msl-featured-thumb featured-thumb-list">
 								                <figure>
-								                    <img src="{% static 'extra-images/smal-thumb6.jpg' %}" alt="KODEFOREST">
+								                    <img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="KODEFOREST">
 								                </figure>
 								                <div class="text">
 								                    <!--Featured Title Start-->
@@ -915,7 +598,7 @@
                                 <!--Music Album List Thumb Start-->
                                 <div class="album-list-thumb-outer">
                                     <div class="album-list-thumb">
-                                        <div class="thumb"><img src="{% static 'extra-images/album1.jpg' %}" alt="KODEFOREST"></div>
+                                        <div class="thumb"><img src="{% static 'images/album1.jpg' %}" alt="KODEFOREST"></div>
                                         <div class="title">
                                             <div>
                                                 <h5>Don’t Wanna Know</h5>
@@ -989,7 +672,7 @@
                                 <!--Music Album List Thumb Start-->
                                 <div class="album-list-thumb-outer">
                                     <div class="album-list-thumb">
-                                        <div class="thumb"><img src="{% static 'extra-images/album2.jpg' %}" alt="KODEFOREST"></div>
+                                        <div class="thumb"><img src="{% static 'images/album2.jpg' %}" alt="KODEFOREST"></div>
                                         <div class="title">
                                             <div>
                                                 <h5>Don’t Wanna Know</h5>
@@ -1063,7 +746,7 @@
                                 <!--Music Album List Thumb Start-->
                                 <div class="album-list-thumb-outer">
                                     <div class="album-list-thumb">
-                                        <div class="thumb"><img src="{% static 'extra-images/album3.jpg' %}" alt="KODEFOREST"></div>
+                                        <div class="thumb"><img src="{% static 'images/album3.jpg' %}" alt="KODEFOREST"></div>
                                         <div class="title">
                                             <div>
                                                 <h5>Don’t Wanna Know</h5>
@@ -1137,7 +820,7 @@
                                 <!--Music Album List Thumb Start-->
                                 <div class="album-list-thumb-outer">
                                     <div class="album-list-thumb">
-                                        <div class="thumb"><img src="{% static 'extra-images/album4.jpg' %}" alt="KODEFOREST"></div>
+                                        <div class="thumb"><img src="{% static 'images/album4.jpg' %}" alt="KODEFOREST"></div>
                                         <div class="title">
                                             <div>
                                                 <h5>Don’t Wanna Know</h5>
@@ -1225,7 +908,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">1</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist1.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist1.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Crank it (Dynamiq Edit)</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1235,7 +918,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">2</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist2.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist2.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Startboy (Bpm Superme)</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1245,7 +928,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">3</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist3.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist3.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Bitch, Don’t Kill My Remix</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1255,7 +938,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">4</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist4.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist4.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Startboy (Bpm Superme)</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1265,7 +948,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">5</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist5.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist5.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Crank it (Dynamiq Edit)</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1275,7 +958,7 @@
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">6</span>
-                                            <figure><img src="{% static 'extra-images/black-img/artist6.jpg' %}" alt=""></figure>
+                                            <figure><img src="{% static 'images/black-img/artist6.jpg' %}" alt=""></figure>
                                             <div class="text-overflow">
                                                 <h6><a href="#">Bitch, Don’t Kill My Remix</a></h6>
                                                 <p>Kanye West ft Post Malone</p>
@@ -1361,7 +1044,7 @@
                                         <!--Featured Thumb Start-->
                                         <div class="msl-featured-thumb featured-thumb-list">
                                             <figure>
-                                                <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb6.jpg' %}">
+                                                <img alt="KODEFOREST" src="{% static 'images/demos/home1.jpg' %}">
                                             </figure>
                                             <div class="text">
                                                 <!--Featured Title Start-->
@@ -1382,7 +1065,8 @@
                                         <!--Featured Thumb Start-->
                                         <div class="msl-featured-thumb featured-thumb-list">
                                             <figure>
-                                                <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb7.jpg' %}">
+                                                <img alt="KODEFOREST" src="{% static '
+                                                images\Снимок экрана 2024-10-17 211727.png' %}">
                                             </figure>
                                             <div class="text">
                                                 <!--Featured Title Start-->
@@ -1403,7 +1087,7 @@
                                         <!--Featured Thumb Start-->
                                         <div class="msl-featured-thumb featured-thumb-list">
                                             <figure>
-                                                <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb8.jpg' %}">
+                                                <img alt="KODEFOREST" src="{% static 'images/smal-thumb8.jpg' %}">
                                             </figure>
                                             <div class="text">
                                                 <!--Featured Title Start-->
@@ -1444,7 +1128,7 @@
                                 <!--Featured Thumb Start-->
                                 <div class="msl-featured-thumb mg-bt">
                                     <figure>
-                                        <img alt="KODEFOREST" src="{% static 'extra-images/featured4.jpg' %}">
+                                        <img alt="KODEFOREST" src="{% static 'images/featured4.jpg' %}">
                                         <div class="text">
                                             <!--Featured Title Start-->
                                             <h4 class="featured-title">
@@ -1468,7 +1152,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb1.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb1.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1489,7 +1173,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb2.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb2.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1524,7 +1208,7 @@
                                 <!--Featured Thumb Start-->
                                 <div class="msl-featured-thumb mg-bt">
                                     <figure>
-                                        <img alt="KODEFOREST" src="{% static 'extra-images/featured2.jpg' %}">
+                                        <img alt="KODEFOREST" src="{% static 'images/featured2.jpg' %}">
                                         <div class="text">
                                             <!--Featured Title Start-->
                                             <h4 class="featured-title">
@@ -1548,7 +1232,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb7.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb7.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1569,7 +1253,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb8.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb8.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1604,7 +1288,7 @@
                                 <!--Featured Thumb Start-->
                                 <div class="msl-featured-thumb mg-bt">
                                     <figure>
-                                        <img alt="KODEFOREST" src="{% static 'extra-images/featured3.jpg' %}">
+                                        <img alt="KODEFOREST" src="{% static 'images/featured3.jpg' %}">
                                         <div class="text">
                                             <!--Featured Title Start-->
                                             <h4 class="featured-title">
@@ -1628,7 +1312,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb4.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb4.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1649,7 +1333,7 @@
                                     <!--Featured Thumb Start-->
                                     <div class="msl-featured-thumb featured-thumb-list">
                                         <figure>
-                                            <img alt="KODEFOREST" src="{% static 'extra-images/smal-thumb6.jpg' %}">
+                                            <img alt="KODEFOREST" src="{% static 'images/smal-thumb6.jpg' %}">
                                         </figure>
                                         <div class="text">
                                             <!--Featured Title Start-->
@@ -1682,49 +1366,49 @@
                 <div class="flicker-slider">
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker1.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker1.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker1.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker1.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker2.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker2.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker2.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker2.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker3.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker3.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker3.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker3.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker4.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker4.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker4.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker4.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker5.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker5.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker5.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker5.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
                     <!--Flicker Slider Thumb Start-->
                     <div class="thumb">
-                        <img src="{% static 'extra-images/flicker3.jpg' %}" alt="KODEFOREST">
+                        <img src="{% static 'images/flicker3.jpg' %}" alt="KODEFOREST">
                         <div class="flicker-link">
-                            <a class="btn-1 theme-bg" href="{% static 'extra-images/flicker6.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
+                            <a class="btn-1 theme-bg" href="{% static 'images/flicker6.jpg' %}"><i class="fa fa-flickr"></i>Flicker Feed</a>
                         </div>
                     </div>
                     <!--Flicker Slider Thumb End-->
@@ -1734,23 +1418,7 @@
             <!--Flicker Slider Wrap End-->
 
             <!--Footer Wrap Start-->
-            <footer class="msl-footer">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="{% static 'images/footer-logo.png' %}" alt="KODEFOREST">
-                    </a>
-                </div>
-                <div class="text">
-                    <ul class="msl-social">
-                        <li><a href="https://www.facebook.com/shazadstars" title="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/" title="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.youtube.com/" title="youtube"><i class="fa fa-youtube-play"></i></a></li>
-                        <li><a href="https://www.instagram.com/" title="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.pinterest.com/" title="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
+            {%include 'include/footer.html'%}
             <!--Footer Wrap End-->
 
             <!--Copy Right Wrap Start-->
@@ -1851,25 +1519,25 @@
         	<div class="sidebar right">
 	           	<a href="#" class="side_t close_cross" data-action="close" data-side="right"><span></span></a>
 	        	<div class="kode_sidebar_right">
-	        		<a href="#" class="kode_logo"><img src="images/footer-logo.png' %}" alt=""></a>
+	        		<a href="#" class="kode_logo"><img src="{% static 'images/footer-logo.png' %}" alt=""></a>
 	        		<ul class="kode_demos">
 	        			<li>
-	        				<a href="event-detail.html" data-rel='prettyPhoto'><img src="images/demos/home1.jpg' %}" alt="Default Home Page"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="event-detail.html" data-rel='prettyPhoto'><img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="Default Home Page"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        			<li>
-	        				<a href="event-organiser.html" data-rel='prettyPhoto'><img src="images/demos/home2.jpg' %}" alt="Home page 2"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="event-organiser.html" data-rel='prettyPhoto'><img src="{% static 'images/demos/home2.jpg' %}" alt="Home page 2"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        			<li>
-	        				<a href="shop-items.html" data-rel='prettyPhoto'><img src="images/demos/home3.jpg' %}" alt="Home page 3"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="shop-items.html" data-rel='prettyPhoto'><img src="{% static 'images/demos/home3.jpg' %}" alt="Home page 3"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        			<li>
-	        				<a href="video-list.html" data-rel='prettyPhoto'><img src="images/demos/home4.jpg' %}" alt="Home page 4"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="video-list.html" data-rel='prettyPhoto'><img src="{% static 'images/demos/home4.jpg' %}" alt="Home page 4"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        			<li>
-	        				<a href="headers.html" data-rel='prettyPhoto'><img src="images/demos/home5.jpg' %}" alt="Home page 5"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="headers.html" data-rel='prettyPhoto'><img src="{% static 'images/Снимок экрана 2024-10-17 211727.png' %}" alt="Home page 5"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        			<li>
-	        				<a href="blog-detail-leftsidebar.html" data-rel='prettyPhoto'><img src="images/demos/home6.jpg' %}" alt="black version"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+	        				<a href="blog-detail-leftsidebar.html" data-rel='prettyPhoto'><img src="{% static 'images/demos/home6.jpg' %}" alt="black version"><span ><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
 	        			</li>
 	        		</ul>
 	        		
@@ -1897,41 +1565,4 @@
 	  	</div>
 
 	  	
-        <!--Jquery Library-->
-        <script src="{% static 'js/jquery.js' %}"></script>
-    	<!--Bootstrap core JavaScript-->
-        <script src="{% static 'js/bootstrap.js' %}"></script>
-        <!--Slick Slider JavaScript-->
-        <script src="{% static 'js/slick.min.js' %}"></script>
-        <!-- Player JavaScript -->
-        <script type="text/javascript" src="{% static 'js/jplayer/jplayer.jukebox.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/jplayer/jquery.jplayer.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/jplayer/jplayer.playlist.min.js' %}"></script>
-        <!--Dl Menu Script-->
-        <script src="{% static 'js/dl-menu/modernizr.custom.js' %}"></script>
-        <script src="{% static 'js/dl-menu/jquery.dlmenu.js' %}"></script>
-        <!--chosen JavaScript-->
-        <script src="{% static 'js/chosen.jquery.min.js' %}"></script>
-        <!--downcount JavaScript-->
-        <script src="{% static 'js/downcount.js' %}"></script>
-        <!--Pretty Photo JavaScript-->
-        <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
-        <!--masonry JavaScript-->
-        <script src="{% static 'js/masonry.min.js' %}"></script>
-        <!--Range slider JavaScript-->
-        <script src="{% static 'js/range-slider.js' %}"></script>
-        <!--Search script JavaScript-->
-        <script src="{% static 'js/search-script.js' %}"></script>
-        <!--Custom sidebar-->
-        <script src="{% static 'js/sidebar.min.js' %}"></script>
-        <!-- bxslider-->
-        <script src="{% static 'js/jquery.bxslider.js' %}"></script>
-        <!-- video-->
-        <script src="{% static 'js/video.js' %}"></script>   
-        <!-- waypoint-->
-        <script src="{% static 'js/waypoint.js' %}"></script>
-        <!--Custom JavaScript-->
-    	<script src="{% static 'js/custom.js' %}"></script>
-
-  </body>
-</html>
+{% endblock %}
