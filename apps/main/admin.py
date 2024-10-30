@@ -1,5 +1,5 @@
 from django.contrib import admin
-from apps.main.models import Main,Artist,Event,Blog
+from apps.main.models import Main,Artist,Event,Blog , Contact
 # Register your models here.
 
 @admin.register(Main)
@@ -19,3 +19,4 @@ class MainAdmin(admin.ModelAdmin):
 class MainAdmin(admin.ModelAdmin):
     fields = ['image','title','description']
     
+admin.site.register(Contact)

@@ -2,3 +2,4 @@ venv/
 .env
 media/
 db.sqlite3
+new_venv/

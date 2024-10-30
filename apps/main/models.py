@@ -96,3 +96,29 @@ class Blog(models.Model):
         verbose_name = "Запись блога"
         verbose_name_plural = "Записи блога"
         
+class Contact(models.Model):
+    name = models.CharField(
+        max_length=255,
+        verbose_name="Имя отправителя"
+    )
+    number = models.CharField(
+        max_length=255,
+        verbose_name="Номер телефона отправителя"
+    )
+    email = models.EmailField(
+        verbose_name="email"
+    )
+    subject = models.CharField(
+        max_length=255,
+        verbose_name="Тема отправителя"
+    )
+    message = models.TextField(
+        verbose_name="Сообщение"
+    )
+    
+    def __str__(self) -> str:
+        return self.name
+    
+    class Meta:
+        verbose_name = "Оставленный отзыв"
+        verbose_name_plural = "Оставденные отзывы"
